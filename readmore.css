@@ -1,0 +1,30 @@
+         
+               /* back to top button styles */
+               #back-to-top-btn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 99;
+                font-size: 2rem;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                border-radius: 50%;
+                padding: 0.5rem;
+                cursor: pointer;
+              }
+              
+              #back-to-top-btn:hover {
+                background-color: #d91515;
+              }     
+              body {
+                background-color: #f7f7f7; /* Default background color */
+                color: #333; /* Default text color */
+              }
+              
+              body.dark {
+                background-color: #333; /* Dark background color */
+                color: #f7f7f7; /* Light text color */
+              }
+                            

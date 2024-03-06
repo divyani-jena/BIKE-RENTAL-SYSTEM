@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FAQ'S</title>
+	<link rel="stylesheet" href="FAQ.css">
+    <nav>
+        <div class="container">
+         <header class="bike-header">
+          <div class="div-logo">
+            <img src="bike-logo.png" height="100px" width="100px" alt="Avatar" class="avatar">
+            <span class="logo-text"></span>
+          </div>
+          <ul>
+            <li><a href="indexb.html">Home</a></li>
+            <li><a href="bikelisting.html">Bike listing</a></li>
+            <li><a class="active" href="FAQ.html">FAQ'S</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+           
+         </ul>
+          
+         </header>
+        </nav>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+		p {
+			text-align: center;
+            font-family:"Lato, sans-serif ";
+            font-size: large;
+            display:grid;
+        }
+
+        .image-container {
+			position: relative;
+			display:block;
+		}
+		.image-container img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+            width: 100%;
+		}
+		.image-container .text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.7);
+			padding: 10px;
+		}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .faq {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .question {
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      .answer {
+        font-size: 20px;
+        margin-bottom: 30px;
+        display:flexbox;
+      }
+        </style>
+</head>
+<body>
+    <div class="image-container">
+		<img src="aboutus-page-header-imgs.jpg" alt="Yours">
+		<div class="text"><h1>FAQ'S</h1><BR>
+        Home>FAQ's</div>
+	</div>
+	
+	<main>
+		<section>
+			<h1><b>FAQ'S</b></h1>
+            
+               <p >
+                How do I use discounts coupons? Except for promotion codes, Our discounts are applied automatically if your reservation meets any of the criteria mentioned above. To use a<br> promotion code, simply enter the code on the homepage widget as you start your reservation. You can do this by selecting the "Have a promotion code?" prompt. Promotion codes<br> can also be entered on the checkout page, under Reservation Total. Please note that the promotion code prompt does not appear for certain types of reservations, such as<br> reservations made on the Deals page.<br>
+Our Discounts Terms & Conditions We no longer offer or accept returning customer discounts. All discounts are non-transferable and cannot be combined with additional<br>promotions or discounts.<br>
+* Liability in case accident: The hirer should have coverage through his own accident and liability insurance. The renting company is not responsible under any circumstances for<br> accidents or damages caused to the hirer or which the hirer causes to any third party or cases of liability<br>
+                  
+               </p>
+        </section>
+        <section>
+          <div class="faq">
+            <div class="question">What is your return policy?</div>
+            <div class="answer">
+              Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange. To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.
+            </div>
+      
+            <div class="question">Do you offer free shipping?</div>
+            <div class="answer">
+              Yes, we offer free shipping on all orders over $50.
+            </div>
+      
+            <div class="question">How can I track my order?</div>
+            <div class="answer">
+              Once your order has shipped, you will receive a tracking number by email. You can track your order on our website using this number.
+            </div>
+      
+            <div class="question">What payment methods do you accept?</div>
+            <div class="answer">
+              We accept all major credit cards, PayPal, and Apple Pay.
+            </div>
+          </div>
+          <script>
+            // JavaScript to toggle the answer sections when the question is clicked
+            const questions = document.querySelectorAll('.question');
+            questions.forEach((question) => {
+              question.addEventListener('click', () => {
+                question.nextElementSibling.classList.toggle('show');
+              });
+            });
+        </script>
+        </section>
+		
+		</main>
+    <!-- back to top button -->
+<button id="back-to-top-btn">&#8679;</button>
+
+<script src="script.js"></script>
+</body>
+	<footer>
+		<p>&copy;
+            GOVERMENT AUTONOMOUS COLLEGE,ANGUL<br> Copyright &copy; 2023 Bike Rental Portal. Brought To You By Aditya & Divyani
+          
+          <h4>Connect with us:
+            <img src="connectus.png">
+          </h4>
+          </p>
+	</footer>
+</body>
+</html>

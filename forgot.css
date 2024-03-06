@@ -1,0 +1,64 @@
+
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+  }
+  
+  input[type=submit] {
+    padding: 0.5rem 2rem;
+    background-color: #109d1c;
+    color: #fff;
+    border:#333;
+    border-radius: 2px;
+    cursor: pointer;
+    width:auto;
+
+  
+  }
+  
+  button:hover {
+    background-color: #e5e7e5;
+  }
+  
+  #success-msg {
+    margin-top: 1rem;
+    color: green;
+  }
+  button {
+    background-color:red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:auto;
+    opacity: 0.9;
+    align-items: center;
+  
+  }
+  

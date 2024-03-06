@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+
+  .bike-header{
+    position: fixed;
+    left:0px;
+    right: 0px;
+    width: 100x;
+    height: 100px;
+    background-color: #0e1112;
+    z-index:100;
+}
+.div-logo{
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+    float: left;
+    text-align: center;
+margin: 24px 0 12px 0;
+}
+
+img.avatar {
+width: 60%;
+border-radius: 60%;
+
+
+}
+.logo-text{
+    display: block;
+    font-family:wildwest;
+    font-weight: bold;
+    color:wheat;
+}
+.bike-nav{
+    float: right;
+    height: 100%;
+}
+.bike-nav a{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Helvetica Neve";
+    padding: right 20px; 
+    padding-top: 12%;
+    display: inline-block;
+ 
+}
+h1{
+    text-decoration:double;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+ h2, h3 {
+	margin-top: 0;
+}
+
+/* Header Styles */
+
+
+
+
+
+/* Main Styles */
+main {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section li {
+	margin-bottom: 20px;
+}
+
+section img {
+	height: 100%;
+       text-align: center;
+       margin: 10px;
+       float: left;
+       text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 60%;
+    border-radius: 60%;
+  
+}
+.image-container {
+    position: absolute;
+    top:70px;
+    width: 100%;
+}
+
+img.yours {
+    position: absolute;
+}
+.logo-text{
+    display: block;
+    font-family:"Helvetica Neve" ;
+    font-weight: bold;
+    color:black;
+}  
+
+  /* back to top button styles */
+  #back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #d42424;
+  }     
+          
+      
+        /* Footer Styles */
+/* Footer Styles */
+ footer{
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -500px;
+    width: 100%;
+        }

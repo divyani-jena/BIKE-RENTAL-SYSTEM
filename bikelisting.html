@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bikelist.css">
+
+<nav>
+  <div class="container">
+   <header class="bike-header">
+    <div class="div-logo">
+      <img src="bike-logo.png" height="100px" width="100px" alt="Avatar" class="avatar">
+      <span class="logo-text"></span>
+    </div>
+    <ul >
+      <li><a  href="indexb.html">Home</a></li>
+      <li><a class="active" href="bikelisting.html">Bike listing</a></li>
+      <li><a href="FAQ.html">FAQ'S</a></li>
+      <li><a href="contactus.html">Contact us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+     
+   </ul>
+   <br><br>
+   </header>
+                <style>
+                    ul {
+                      list-style-type:none;
+                      float: right;
+                      margin: 0;
+                      padding: 0;
+                      overflow: hidden;
+                      background-color:#0a2d42;
+                    }
+                    
+                    li {
+                      float: left;
+                      
+                
+                    }
+                    
+                    li a {
+                      display: block;
+                      color: white;
+                      text-align:right;
+                      padding: 14px 16px;
+                      text-decoration: none;
+                    }
+                    
+                    li a:hover:not(.active) {
+                      background-color: #111;
+                    }
+                    
+                    .active {
+                      background-color:red;
+                    }
+                  
+                   
+                    
+                   
+               
+
+
+       
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+body{
+    background-image: url(cool-background.png);
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin:auto;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-left: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-right: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #cb1616;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 40px;
+  left: 2px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: blueviolet;}
+ 
+      /* Footer Styles */
+      footer{
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  width: 100%;
+      }
+      
+
+</style></nav></header>
+</head>
+<body>
+<h1>bike list</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 26</div>
+  <img src="grazia.jpeg" alt="grazia" style="width:90%; height:23%">
+  <div class="text-block">
+    <h4>HONDA GRAZIA</h4>
+    <p>Price-300/day<br>
+    1800/week</p>
+    <div class="button">
+        <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+    </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 26</div>
+  <img src="honda shine.jpeg" alt="honda shine"  style="width:90%; height:23%">
+  <div class="text-block">
+    <h4>HONDA SHINE</h4>
+    <p>PRICE-350/DAY<br>
+    2000/week</p>
+    <div class="button">
+        <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+    </div>
+  
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 26</div>
+  <img src="hence.jpeg" alt="honda hence"  style="width:90%; height:23%">
+  <div class="text-block">
+    <h4>HONDA hENCE</h4>
+    <p>PRICE-600/DAY<br>
+    3700/week</p>
+    <div class="button">
+        <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+    </div>
+  
+  </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 26</div>
+    <img src="hornet.jpeg" alt="honda HORNET"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>HONDA HORNET</h4>
+          <p>PRICE-500/DAY<br>
+            3000/week</p>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5/ 26</div>
+    <img src="activa.jpg" alt="honda ACTIVA"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>HONDA ACTIVA</h4>
+          <p>PRICE-300/DAY<br>
+            1800/week
+          </p>
+          <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div> 
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 26</div>
+    <img src="Bajaj-Platina-110.jpg" alt="Bajaj-Platina-110"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>BAJAJ PLATINA</h4>
+          <p>PRICE-250/DAY<br>
+            1400/WEEK
+          </p>
+          <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">7 / 26</div>
+    <img src="bajaj-pulsar-150.jpeg" alt="bajaj-pulsar-150"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>BAJAJ PULSAR</h4>
+          <p>PRICE-400/DAY<br>
+            2500/WEEK
+        </p>
+        <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">8 / 26</div>
+    <img src="NS160.JPG" alt="NS160"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>NS 160</h4>
+          <p>PRICE-500/DAY<br>
+            3200/WEEK
+        </p>
+        <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 26</div>
+    <img src="Yamaha_R15_V3.0.jpg"  style="width:90%; height:23%">
+    <div class="text-block">
+        <h4>NS 160</h4>
+        <p>PRICE-600/DAY<br>
+          4000/WEEK
+      </p>
+      <div class="button">
+        <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+    </div>
+  
+  </div>
+
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">10 / 26</div>
+    <img src="NS200.JPG" alt="NS200"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>NS 200</h4>
+          <p>PRICE-600/DAY<BR>
+        4000/WEEK</p>
+        <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">11 / 26</div>
+    <img src="RS200.JPG" alt="RS200"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>RS 200</h4>
+          <p>PRICE-600/DAY<BR>
+        4000/WEEK</p>
+          <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">12 / 26</div>
+    <img src="sp125.jpg" alt="sp125"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>SP 125</h4>
+          <p>PRICE-300/DAY<BR>
+        1800/DAY</p>
+          <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>      
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">13 / 26</div>
+    <img src="TVS-Apache-RTR-160-4V.jpg" alt="TVS-Apache-RTR-160-4V"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>APACHE RTR 160</h4>
+          <p>PRICE-300/DAY</p>
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">14 / 26</div>
+    <img src="unicorn.jpg" alt="unicorn"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>UNICORN</h4>
+          <p>PRICE-400/DAY
+            <BR>2500/WEEK
+          </p>
+          <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+
+<div class="mySlides fade">
+    <div class="numbertext">15 / 26</div>
+    <img src="Yamaha mt15.jpeg" alt="Yamaha mt15"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>YAMAHA MT15</h4>
+          <p>PRICE-600/DAY<BR>
+        4000P/WEEK</p>
+        <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">16 / 26</div>
+    <img src="yamaha_fz s.jpeg" alt="yamaha_fz s"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>FZ S</h4>
+          <p>PRICE-400/DAY<BR>
+        2500/WEEK</p>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">17 / 26</div>
+    <img src="yamaha-fz-x-.jpg" alt="yamaha-fz-x"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>FZ X</h4>
+          <p>PRICE-400/DAY
+            <BR>2500/WEEK
+          </p>
+          <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">18 / 26</div>
+    <img src="Yamaha_R15_V3.0.jpg" alt="Yamaha_R15_V3.0"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>R 15</h4>
+          <p>PRICE-600/DAY<BR>4000/WEEK</p>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">19 / 26</div>
+    <img src="yamaha-fascino.jpg" alt="yamaha-fascino"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>FASCINO</h4>
+          <p>PRICE-300/DAY<BR>1800/WEEK</p>
+            <div class="button">
+                <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+            </div>
+          
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">20 / 26</div>
+    <img src="HERO DESTINY.JPG" alt="hero destiny"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>HERO DESTINY</h4>
+          <p>PRICE-300/DAY</p>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">21 / 26</div>
+    <img src="TVS-Ntorq-125.JPEG" alt="TVS-Ntorq-125"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>TVS-Ntorq-125</h4>
+          <p>PRICE-400/DAY<BR>2500/WEEK</p>
+            <div class="button">
+                <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+            </div>
+          
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">22 / 26</div>
+    <img src="hunter.jpeg" alt="HUNTER"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>HUNTER</h4>
+          <p>PRICE-500/DAY<BR>3200/WEEK</p>
+            <div class="button">
+                <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+            </div>
+          
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">23 / 26</div>
+    <img src="splender.jpeg" alt="splender"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>HERO SPLENDER PLUS</h4>
+          <p>PRICE-250/DAY<BR>1500/WEEK</p>
+            <div class="button">
+                <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+            </div>
+          
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">24 / 26</div>
+    <img src="bullet 350.jpg" alt="bullet 350"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>CLASSIC 350</h4>
+          <p>PRICE-600/DAY<BR>4000/WEEK</p>
+            <div class="button">
+            <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+        </div>
+      
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">25 / 26</div>
+    <img src="jupiter-125.jpg" alt="jupiter-125"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>JUPITER 125</h4>
+          <p>PRICE-300/DAY<BR>1800/WEEK</p>
+            <div class="button">
+                <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+            </div>
+          
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">26 / 26</div>
+    <img src="METEOR 350.JPEG" alt="meteor30"  style="width:90%; height:23%">
+    <div class="text-block">
+          <h4>METEOR</h4>
+          <p>PRICE-600/DAY<BR>4000/WEEK</p>
+            <div class="button">
+                <button class="button button1" onclick="document.location='booking.html'">RIDE NOW</button>
+            </div>
+          
+    </div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span> 
+  <span class="dot" onclick="currentSlide(13)"></span> 
+  <span class="dot" onclick="currentSlide(14)"></span> 
+  <span class="dot" onclick="currentSlide(15)"></span>
+  <span class="dot" onclick="currentSlide(16)"></span> 
+  <span class="dot" onclick="currentSlide(17)"></span> 
+  <span class="dot" onclick="currentSlide(18)"></span> 
+  <span class="dot" onclick="currentSlide(19)"></span>  
+  <span class="dot" onclick="currentSlide(20)"></span> 
+  <span class="dot" onclick="currentSlide(21)"></span> 
+  <span class="dot" onclick="currentSlide(22)"></span> 
+  <span class="dot" onclick="currentSlide(23)"></span> 
+  <span class="dot" onclick="currentSlide(24)"></span> 
+  <span class="dot" onclick="currentSlide(25)"></span> 
+  <span class="dot" onclick="currentSlide(26)"></span> 
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- back to top button -->
+<button id="back-to-top-btn">&#8679;</button>
+
+<script src="script.js"></script>
+
+</body>
+<footer>
+  <h3>
+    GOVERMENT AUTONOMOUS COLLEGE,ANGUL<br> Copyright &copy; 2023 Bike Rental Portal. Brought To You By Aditya & Divyani
+  <h3></h3>
+  <h4>Connect with us:
+    <img src="connectus.png">
+  </h4>
+  
+  
+  
+</footer>
+
+</html> 

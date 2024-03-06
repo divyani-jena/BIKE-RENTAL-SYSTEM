@@ -1,0 +1,196 @@
+body{
+    margin: 0px;
+    width: 100%;
+   }
+   .bike-header{
+       position:fixed;
+       left:0px;
+       right: 0px;
+       width: 100x;
+       height: 100px;
+       background-color: #0e1112;
+       z-index:100;
+   }
+   .div-logo{
+       height: 100%;
+       text-align: center;
+       margin: 10px;
+       margin-left: 24px;
+       float: left;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  border-radius: 50%;
+margin-left: 24px;
+
+
+   }
+   .logo-text{
+       display: block;
+       font-family:wildwest;
+       font-weight: bold;
+       color:black;
+   }
+   .bike-nav{
+       float: right;
+       height: 100%;
+   }
+   .bike-nav a{
+       color: black;
+       font-size: 15px;
+       font-weight: 700;
+       font-family: "Helvetica Neve";
+       padding: right 20px; 
+       padding-top: 12%;
+       display: inline-block;
+    
+   }
+   .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: #4CAF50;} /* Green */
+  .button2 {background-color: #008CBA;} /* Blue */
+  .button{
+    position: relative;
+    left:575px;
+  }
+   .site-content{
+    position:absolute;
+    top:70px;
+    width: 100%;
+}
+   .image-content{
+       background-image: url("front-image.jpg");
+       height:800px;
+       width: 100%;
+        
+      }
+      
+     
+      .quote{
+        color: white;
+        font-family:Arial, Helvetica, sans-serif;
+        position:relative;
+        top: 10%;
+        text-align:right;
+        padding-right: 100px;
+      }
+        
+        
+    
+
+    .image-container {
+      position: relative;
+      top:70px;
+      width: 100%;
+  }
+  
+  img.yours {
+      position:relative;
+      width: auto;
+      height: auto;
+    
+    }
+    .star {
+      position:relative;
+      padding: 1px;
+      margin-bottom: -400px;
+    }
+    .column{      
+      position:relative;
+      bottom: 44px;
+        background-image: "bckgrdbike.jpg";
+        float: left;
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        margin: 24px 0 12px 0;
+        bottom: -330px;
+      }
+      
+      img.avatar {
+       
+        border-radius: 100%;
+      }
+      
+    .contact-info {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 30px;
+        
+        box-shadow: 0px 0px 10px rgb(250, 244, 244);
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        background-color: rgba(6, 22, 18, 0.133);
+        
+      }
+
+      .contact-info h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      .contact-info p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .contact-info .icon {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+
+      .contact-info a {
+        display: flex;
+        flex-direction:column;
+        align-items: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color:wheat;
+        
+      }
+                      
+               /* back to top button styles */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+  background-color: #c41717;
+}     
+        
+    
+      /* Footer Styles */
+ footer{
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  width: 100%;
+      }
+     

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Forgot Password</h1>
+    <p>Enter your email address and we'll send you a link to reset your password.</p>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <input type="submit" id="submit-btn"onclick ="window.location.href='thank-you.html'">
+      <p><button onclick="window.location.href='indexb.html'" >Back to Home</button></p>
+    </form>
+    <div id="success-msg"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

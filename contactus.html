@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>contactus</title>
+    <link rel="stylesheet" href="contactus.css">
+    <nav>
+        <div class="container">
+            <header class="bike-header">
+                <div class="div-logo">
+                    <img src="bike-logo.png" height="100px" width="100px" alt="Avatar" class="avatar">
+                    <span class="logo-text"></span>
+                </div>
+                <ul>
+                    <li><a href="indexb.html">Home</a></li>
+                    <li><a href="bikelisting.html">Bike listing</a></li>
+                    <li><a href="FAQ.html">FAQ'S</a></li>
+                    <li><a class="active"href="contactus.html">Contact us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+
+                </ul>
+
+            </header>
+        </nav>
+        <style>
+            .contact-info {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 50px;
+                background-color: #fff;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                display:block;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(195, 240, 228);
+            }
+
+            .contact-info h2 {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+
+            .contact-info p {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .contact-info .icon {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .contact-info a {
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #333;
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+
+    <body >
+        <div class="contact-info">
+            <form action="submit-form.php" method="post">
+                <h1>Contact Us</h1>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+                <button type="submit" value="Submit" ><a href="thank-you.html">Submit</a>
+
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Info</h2><br>
+            <img src="location_pin_002.jpg" alt="loc" class="loc">
+            <div class="text_cont"><a href="http://www.gaca.nic.in"><h3>Angul Autonomous College</h3></a></div><br>
+            <img src="call.jpg" alt="loc" class="loc">
+            <div class="text_cont"><a href="divadivyanijena@gmail.com"><h3>6371869435</h3></a></div><br>
+              <img src="msg.jpg" alt="loc" class="loc">
+              <div class="text_cont"><a href="adityasahu9861@gmail.com"><h3>adityasahu9861@gmail.com</h3></a></div><br>
+              
+              </div>
+             <!-- back to top button -->
+<button id="back-to-top-btn">&#8679;</button>
+
+<script src="script.js"></script>
+
+        </body>
+        <footer>
+          
+            <p>&copy;
+                GOVERMENT AUTONOMOUS COLLEGE,ANGUL<br> Copyright &copy; 2023 Bike Rental Portal. Brought To You By Aditya & Divyani
+              
+              <h4>Connect with us:
+                <img src="connectus.png">
+              </h4>
+              </p>
+        </footer>
+    

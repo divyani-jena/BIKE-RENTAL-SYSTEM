@@ -1,0 +1,60 @@
+.bike-header{
+    position:fixed;
+    left:0px;
+    right: 0px;
+    width: 100x;
+    height: 100px;
+    background-color: #0e1112;
+    z-index:100;
+}
+.div-logo{
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+    float: left;
+    text-align: center;
+margin: 24px 0 12px 0;
+}
+
+img.avatar {
+width: 60%;
+border-radius: 60%;
+
+
+}
+.logo-text{
+    display: block;
+    font-family:wildwest;
+    font-weight: bold;
+    color:black;
+}
+.bike-nav{
+    float: right;
+    height: 100%;
+}
+.bike-nav a{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Helvetica Neve";
+    padding: right 20px; 
+    padding-top: 12%;
+    display: inline-block;
+ 
+
+}
+input[type=submit] {
+    padding: 0.5rem 2rem;
+    background-color: #109d1c;
+    color: #fff;
+    border:#333;
+    border-radius: 2px;
+    cursor: pointer;
+    width:auto;
+
+  
+  }
+  
+  button:hover {
+    background-color: #e5e7e5;
+  }
